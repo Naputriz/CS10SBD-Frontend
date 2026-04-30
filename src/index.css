@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans antialiased overflow-x-hidden;
+  }
+}
+
+
+@layer utilities {
+  .glass {
+    @apply bg-slate-800/80 backdrop-blur-md border border-slate-700 shadow-xl;
+  }
+  .glass-card {
+    @apply bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:border-slate-600 transition-colors shadow-lg hover:shadow-xl;
+  }
+}
